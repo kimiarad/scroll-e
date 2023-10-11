@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Hero">
+        <h1>scroll to reach the sea</h1>
+        <img src="images/mainCloud.png" id="mainCloud" alt="">
+        <img src="images/rightCloud.png" id="rightCloud" alt="">
+        <img src="images/Layer 1.png" id="Mountain" alt="">
+        <img src="images/m_3.png" id="road" alt="">
+    </section>
+    <section class="About">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident blanditiis dicta tenetur perspiciatis praesentium excepturi harum ipsam esse a at, quis hic sed, vitae totam reprehenderit explicabo aliquam facilis non neque autem sit modi? Nulla quo facere tenetur commodi minima sequi praesentium voluptas assumenda eos vel aliquid laudantium voluptatum rerum nobis quia expedita beatae eius neque, sit quasi accusamus est. Illum architecto, repellat id adipisci accusamus odio mollitia ad dicta odit necessitatibus consequuntur eum dignissimos molestiae, numquam neque ut, commodi quas beatae sequi impedit eaque. Autem, minima vitae, rerum doloremque atque dicta consequuntur veritatis voluptatibus quas eos neque doloribus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident blanditiis dicta tenetur perspiciatis praesentium excepturi harum ipsam esse a at, quis hic sed, vitae totam reprehenderit explicabo aliquam facilis non neque autem sit modi? Nulla quo facere tenetur commodi minima sequi praesentium voluptas assumenda eos vel aliquid laudantium voluptatum rerum nobis quia expedita beatae eius neque, sit quasi accusamus est. Illum architecto, repellat id adipisci accusamus odio mollitia ad dicta odit necessitatibus consequuntur eum dignissimos molestiae, numquam neque ut, commodi quas beatae sequi impedit eaque. Autem, minima vitae, rerum doloremque atque dicta consequuntur veritatis voluptatibus quas eos neque doloribus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae provident blanditiis dicta tenetur perspiciatis praesentium excepturi harum ipsam esse a at, quis hic sed, vitae totam reprehenderit explicabo aliquam facilis non neque autem sit modi? Nulla quo facere tenetur commodi minima sequi praesentium voluptas assumenda eos vel aliquid laudantium voluptatum rerum nobis quia expedita beatae eius neque, sit quasi accusamus est. Illum architecto, repellat id adipisci accusamus odio mollitia ad dicta odit necessitatibus consequuntur eum dignissimos molestiae, numquam neque ut, commodi quas beatae sequi impedit eaque. Autem, minima vitae, rerum doloremque atque dicta consequuntur veritatis voluptatibus quas eos neque doloribus.</p>
+    </section>
+
+    <script>
+        window.addEventListener(("scroll"),()=>{
+        document.querySelector("#Mountain").style.marginBottom = `${106 - window.scrollY}px`
+        document.querySelector("#mainCloud").style.marginTop = `-${window.scrollY}px`
+        document.querySelector("#rightCloud").style.marginRight = `-${window.scrollY}px`
+        document.querySelector(".Hero h1").style.marginTop = `${window.scrollY * 1.5}px`
+    })
+    </script>
+</body>
+</html>

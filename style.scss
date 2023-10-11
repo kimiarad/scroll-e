@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  .Hero {
+    background-image: url(images/pexels-abdullah-ghatasheh-1631677.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0px 500px;
+
+    h1 {
+      color: white;
+      position: absolute;
+      font-size: 50px;
+      z-index: 2;
+      margin-top: 10px;
+    }
+    img {
+      position: absolute;
+      bottom: 0px;
+    }
+    #Mountain {
+      position: absolute;
+      margin-bottom: 106px;
+      margin-left: 60px;
+      width: 100%;
+      // pointer-events: none;
+    }
+    #road{
+      width: 100%;
+      z-index: 3;
+      height: 100%      // pointer-events: none;
+    }
+    #mainCloud,
+    #rightCloud {
+      top: 120px;
+      width: 200px;
+    }
+    #rightCloud {
+      right: 110px;
+    }
+  }
+  .About {
+    background-color: #312C68;
+    padding: 0px 100px;
+    min-height: 100vh;
+    font-size: 20px;
+
+    h1 {
+      padding-top: 50px;
+      font-size: 40px;
+    }
+    p {
+      padding: 30px 0px;
+      &:nth-of-type(1){
+        padding-top: 80px;
+      }
+    }
+    .active {
+      color: black;
+      &::before {
+        background-color: black;
+        width: 100%;
+      }
+    }
+  }
+}

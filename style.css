@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+body .Hero {
+  background-image: url(images/pexels-abdullah-ghatasheh-1631677.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0px 500px;
+}
+body .Hero h1 {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  z-index: 2;
+  margin-top: 10px;
+}
+body .Hero img {
+  position: absolute;
+  bottom: 0px;
+}
+body .Hero #Mountain {
+  position: absolute;
+  margin-bottom: 106px;
+  margin-left: 60px;
+  width: 100%;
+}
+body .Hero #road {
+  width: 100%;
+  z-index: 3;
+  height: 100%;
+}
+body .Hero #mainCloud,
+body .Hero #rightCloud {
+  top: 120px;
+  width: 200px;
+}
+body .Hero #rightCloud {
+  right: 110px;
+}
+body .About {
+  background-color: #312C68;
+  padding: 0px 100px;
+  min-height: 100vh;
+  font-size: 20px;
+}
+body .About h1 {
+  padding-top: 50px;
+  font-size: 40px;
+}
+body .About p {
+  padding: 30px 0px;
+}
+body .About p:nth-of-type(1) {
+  padding-top: 80px;
+}
+body .About .active {
+  color: black;
+}
+body .About .active::before {
+  background-color: black;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
